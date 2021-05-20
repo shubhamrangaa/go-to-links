@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Go To Links",
+  "description": "Keep track of your links",
+  "icons": { "128": "Icon.png" },
+  "version": "1.0.0",
+  "browser_action": {
+    "default_icon": "Icon.png",
+    "default_popup": "index.html"
+  },
+
+  "permissions": ["storage"]
+}
