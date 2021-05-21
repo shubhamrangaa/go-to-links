@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="formContainer">
       <form action="" method="POST" id="profileForm" name="profileForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+
         <label for="facebook">Facebook</label>
         <input type="text" id="facebook" />
 
@@ -21,9 +29,15 @@
 
         <label for="twitter">Twitter</label>
         <input type="text" id="twitter" />
-        <button type="submit" id="submitForm">Save Changes</button>
+
+        <label for="portfolio">Portfolio</label>
+        <input type="text" id="portfolio" />
+
+        <button type="submit" id="submitForm" class="editProfile">
+          Save Changes
+        </button>
       </form>
-      <a href="./index.html">Back to Home</a>
+      <a href="./index.html" class="back">Back to Home</a>
     </section>
     <script src="./app.js"></script>
   </body>

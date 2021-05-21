@@ -2,6 +2,14 @@
   font-family: Inter;
 }
 
+p {
+  color: white;
+}
+
+body {
+  background-color: #08002c;
+}
+
 .Container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +21,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #08002c;
 }
 
 .socialLinks {
@@ -23,11 +32,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 1.3rem;
   width: 400px;
 }
 
 .socialLinks h2 {
+  color: white;
   padding-left: 1rem;
+  margin-top: 0;
 }
 
 .socialLinks .linkContainer {
@@ -36,14 +48,75 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
 .editProfile {
-  background: #5b58ff;
+  background: rgba(48, 255, 83, 0.767);
   color: white;
   padding: 0.75rem 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   text-decoration: none;
   border-radius: 0.25rem;
+}
+
+button.socialItem {
+  outline: none;
+  background-color: #05001b;
+  border: none;
+  color: #d2ffe5;
+  cursor: pointer;
+}
+
+#displayLink {
+  outline: none;
+  border: none;
+  background-color: #ececec;
+  font-size: 1.2rem;
+  border-radius: 0.25rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem;
+}
+
+#profileForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  width: 300px;
+  padding: 1rem;
+}
+
+#profileForm label {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+  color: aliceblue;
+}
+
+#profileForm input {
+  margin-bottom: 1rem;
+  background-color: rgba(231, 231, 231, 0.87);
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.1rem;
+}
+
+#profileForm button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.back {
+  padding: 1rem;
+  color: #c6a3ff;
 }
 /*# sourceMappingURL=style.css.map */

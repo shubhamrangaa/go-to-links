@@ -26,25 +26,28 @@
   <body>
     <section class="Container">
       <section class="header">
-        <h1>Your Name</h1>
+        <p id="profileName">Hi Shubham, how are you?</p>
       </section>
       <section class="socialLinks">
-        <h2>Social Links</h2>
+        <h2>Your Links</h2>
         <div class="linkContainer">
-          <a href="#" class="socialItem">
+          <button id="facebookButton" class="socialItem">
             <i class="fab fa-facebook-square fa-3x"></i>
-          </a>
-          <a href="#" class="socialItem">
-            <i class="fab fa-instagram fa-3x"></i>
-          </a>
-          <button id="linkedinLinkButton" class="socialItem">
-            <i class="fab fa-linkedin fa-3x"></i>
-            <textarea name="linkedin" id="linkedinLink"></textarea>
           </button>
-          <a href="#" class="socialItem">
+          <button id="instagramButton" class="socialItem">
+            <i class="fab fa-instagram fa-3x"></i>
+          </button>
+          <button id="linkedinButton" class="socialItem">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </button>
+          <button id="twitterButton" class="socialItem">
             <i class="fab fa-twitter-square fa-3x"></i>
-          </a>
+          </button>
+          <button id="portfolioButton" class="socialItem">
+            <i class="fas fa-globe-americas fa-3x"></i>
+          </button>
         </div>
+        <textarea name="links" id="displayLink"></textarea>
       </section>
       <a href="./editProfile.html" class="editProfile">Edit Profile</a>
     </section>
