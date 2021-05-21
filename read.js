@@ -4,7 +4,7 @@ window.onload = function () {
   let linkedinButton = document.getElementById("linkedinButton");
   let twitterButton = document.getElementById("twitterButton");
   let portfolioButton = document.getElementById("portfolioButton");
-  let facebookButton = document.getElementById("facebookButton");
+  let githubButton = document.getElementById("githubButton");
   let instagramButton = document.getElementById("instagramButton");
 
   chrome.storage.sync.get(["name"], function (result) {
@@ -31,9 +31,9 @@ window.onload = function () {
       document.execCommand("copy");
     });
   };
-  facebookButton.onclick = () => {
-    chrome.storage.sync.get(["facebook"], function (result) {
-      displayLink.value = result.facebook;
+  githubButton.onclick = () => {
+    chrome.storage.sync.get(["github"], function (result) {
+      displayLink.value = result.github;
       displayLink.select();
       document.execCommand("copy");
     });

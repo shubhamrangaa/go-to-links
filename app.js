@@ -1,7 +1,7 @@
 window.onload = function () {
   const name = document.profileForm.name;
   const linkedin = document.profileForm.linkedin;
-  const facebook = document.profileForm.facebook;
+  const github = document.profileForm.github;
   const instagram = document.profileForm.instagram;
   const twitter = document.profileForm.twitter;
   const portfolio = document.profileForm.portfolio;
@@ -22,8 +22,8 @@ window.onload = function () {
   chrome.storage.sync.get(["portfolio"], function (result) {
     portfolio.value = result.portfolio;
   });
-  chrome.storage.sync.get(["facebook"], function (result) {
-    facebook.value = result.facebook;
+  chrome.storage.sync.get(["github"], function (result) {
+    github.value = result.github;
   });
 
   submit.onclick = () => {
@@ -33,7 +33,7 @@ window.onload = function () {
         name: name.value,
         linkedin: linkedin.value,
         twitter: twitter.value,
-        facebook: facebook.value,
+        github: github.value,
         instagram: instagram.value,
         portfolio: portfolio.value,
       },
